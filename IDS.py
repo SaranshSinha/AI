@@ -1,4 +1,3 @@
-
 import collections
 import queue
 import itertools
@@ -122,7 +121,7 @@ class Solver:
         for depth in itertools.count():
             visited = set()
             startNode = Node(self.puzzle)
-            print(startNode.isSolved)
+            #print(startNode.isSolved)
             goalNode = DLS(startNode, depth)
             if goalNode != None:
                 if goalNode.isSolved:
