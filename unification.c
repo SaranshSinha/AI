@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
 int no_of_pred;
 int no_of_arg[10];
 int i,j;
@@ -12,13 +13,13 @@ void display();
 void chk_arg_pred();
 
 
-   void main()
+   int main()
    {
    char ch;
    do{
-   
 
- 
+
+
             printf("\t=========PROGRAM FOR UNIFICATION=========\n");
             printf("\nEnter Number of Predicates:- [ ]\b\b");
             scanf("%d",&no_of_pred);
@@ -40,8 +41,8 @@ void chk_arg_pred();
 
             display();
             chk_arg_pred();
-            
-            
+
+
             printf("Do you want to continue(y/n):   ");
             scanf("%c",&ch);
        }while(ch == 'y');
@@ -111,6 +112,7 @@ void chk_arg_pred();
                           if(flag==0)
                           printf("\n\t======SUBSTITUTION IS======");
                         printf("\n\t%c/%c",argument[i+1][j],argument[i][j]);
+                        cout<<endl;
                          flag++;
                         }
                 }
@@ -120,5 +122,3 @@ void chk_arg_pred();
                         printf("\nNo need of Substitution\n");
             }
    }
-
-
